@@ -12,12 +12,13 @@ const Footer: React.FC = () => {
           <Col xs={12} md={4} className="mb-3 mb-md-0">
             {/* SVG Logo */}
             <img
-              src="/logo.svg"
-              width="119"
-              height="32"
-              className="d-inline-block align-top"
-              alt="Logo"
+            src={`${process.env.PUBLIC_URL}/logo.svg`}
+            width="119"
+            height="32"
+            className="d-inline-block align-top"
+            alt="Logo"
             />
+
           </Col>
           <Col xs={12} md={4} className="mb-3 mb-md-0">
             {/* Made with React */}

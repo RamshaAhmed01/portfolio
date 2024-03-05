@@ -25,7 +25,7 @@ import { motion } from 'framer-motion';
 
 const Contact: React.FC = () => {
   return (
-    <Container className="contact-section section">
+    <Container className="section">
         <motion.div
         initial="hidden"
         animate="visible"

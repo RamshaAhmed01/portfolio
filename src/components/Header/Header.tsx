@@ -10,8 +10,8 @@ const Header: React.FC = () => {
     <Navbar expand="lg" variant="dark" className="custom-navbar" sticky="top"> {/* Added sticky="top" */}
       <Container>
         <Navbar.Brand href="#home">
-          <img src="/logo.svg" width="119" height="32" className="d-inline-block align-top" alt="Logo" />
-        </Navbar.Brand>
+        <img src={`${process.env.PUBLIC_URL}/logo.svg`} width="119" height="32" className="d-inline-block align-top" alt="Logo" />
+           </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

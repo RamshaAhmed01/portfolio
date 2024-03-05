@@ -46,7 +46,6 @@ const App: React.FC = () => {
         <MiniProjects />
       </motion.div>
       <ScrollDown />
-      <ScrollDown />
       <motion.div id="stack" variants={sectionVariants} initial="hidden" animate="visible">
         <Stack />
       </motion.div>

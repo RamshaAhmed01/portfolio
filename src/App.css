@@ -21,7 +21,6 @@
   --line-height-h4: 1.4;
   --line-height-p: 1.5;
   --line-height-smaller: 1.5;
-  --margin-horizontal-mobile: 24px; /* Margin for mobile devices */
   --color-light: #F8F8F2;
 }
 
@@ -47,6 +46,12 @@
 
 *, *::before, *::after {
   box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 
 body {
@@ -321,5 +326,51 @@ a:hover {
     display: none;
   }
 
+  .custom-navbar, .footer-bg {
+    width: 100%;
+  }
+
 }
 
+@media (max-width: 480px) { 
+  .card-img-left-main {
+    width: 50%; /* Set width to 50% for side-by-side layout on larger screens */
+    height: 100%; /* Optional: Adjust if you want the image to fill the card height */
+  }
+  .card-custom-main {
+    flex-direction: row; /* Side-by-side content */
+  }
+  .about-text {
+    max-width: 100%; /* Adjust based on your layout/design */
+  }
+
+  .h3 {
+    font-size: 2em;
+  }
+
+  .hero-section {
+    display: none;
+  }
+
+  .arrow .icons {
+    display: none;
+  }
+
+  .section{
+    margin-top: 64px !important;
+    margin-bottom: 64px !important;
+  }
+
+  .bye-section {
+    display: none;
+  }
+
+  .contact-text {
+    display: none;
+  }
+
+  .custom-navbar, .footer-bg {
+    width: 100%;
+  }
+
+}
