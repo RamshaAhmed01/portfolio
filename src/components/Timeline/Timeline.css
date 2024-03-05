@@ -1,0 +1,71 @@
+.timeline-line-container {
+  position: relative;
+  padding-left: 30px; /* Adjusted for visual alignment */
+  margin-top: 24px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px; /* Line thickness */
+  background-color: var(--card-border);
+}
+
+@keyframes pulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.4); /* Adjust the scale value for the desired effect */
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+  }
+}
+
+.timeline-heart {
+  position: absolute;
+  bottom: -10px; /* Adjust as necessary to place the icon right at the bottom of the line */
+  left: 0%;
+  transform: translateX(-50%); /* Centers the icon horizontally */
+  font-size: 3em; /* Adjust the size of the heart icon as needed */
+  color: var(--warning-color); /* Ensure you have this variable defined, or use a specific color value */
+  animation: pulse 2s infinite ease-in-out; /* Apply the animation */
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -9px; /* Adjust based on circle size and line thickness */
+  top: 50%;
+  margin-right: 24px;
+  transform: translateY(-50%); /* Adjusts the circle to be in the center of the text */
+  width: 24px; /* Circle size */
+  height: 24px; /* Circle size */
+  border-radius: 50%;
+  color: var(--primary-color);
+}
+
+.timeline-items {
+  position: relative;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px; /* Adjust the spacing between items as needed */
+  padding: 10px 0; /* Top and bottom padding 10px, left and right padding 0 */
+}
+
+.timeline-item h3 {
+  position: relative;
+  margin-left: 48px; /* Adjust based on circle size to ensure text starts next to the circle */
+  top: 50%;
+}
+
+
+@media (max-width: 720px) { 
+  .timeline-line, .timeline-heart {
+    display: none;
+  }
+}

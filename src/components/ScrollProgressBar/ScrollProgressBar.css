@@ -1,0 +1,15 @@
+.scroll-progress-container {
+    position: fixed;
+    width: 100%;
+    top: 50px; /* Adjust based on your navbar's height */
+    left: 0;
+    z-index: 1050; /* Ensure it's above the navbar if needed */
+    height: 8px;
+    background: transparent;
+}
+
+.scroll-progress-bar {
+    height: 100%;
+    background-color: var(--primary-color);
+    transition: width 0.25s ease-out;
+}
