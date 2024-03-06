@@ -4,6 +4,7 @@
 
 Welcome to my developer portfolio! This project is a culmination of my skills, projects, and experiences as a web developer, showcasing a dynamic and interactive web presence built with React. It's designed to highlight my journey in web development, emphasizing creativity, technical prowess, and a keen eye for design.
 [Live](https://igordinuzzi.github.io/portfolio-react/)
+[Watch video](https://youtu.be/tU5_63tMvvM)
 
 ---
 
