@@ -32,7 +32,7 @@ const AboutMe: React.FC = () => {
       {/* Animate the image using motion.img */}
       <img 
         src={`${process.env.PUBLIC_URL}/images/about/about.png`} 
-        alt="About Me" 
+        alt="About Igor" 
         className="img-fluid mb-4"
       />
       

@@ -5,6 +5,7 @@ export interface Project {
   description: string;
   tags: string[];
   imageUrl: string;
+  alt?: string;
   liveUrl: string; // URL to the live project
   repoUrl: string; // URL to the project's repository
 }

@@ -7,10 +7,10 @@ const Hero: React.FC = () => {
       {/* Text Container */}
       <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', zIndex: 1, color: 'white', whiteSpace: 'nowrap' }}>
         <span className="fadeInAnimation first-part">
-          <h1>Igor, a Front-End Developer!</h1>
+          <h1>Engage with Emojis</h1>
         </span>
         <span className="fadeInAnimation second-part">
-        <h1>Engage with Emojis: Discover Collaboration Fun!</h1>
+        <h1>Discover Collaboration Fun!</h1>
         </span>
       </div>
       {/* Spline/Iframe Container */}

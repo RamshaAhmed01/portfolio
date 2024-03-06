@@ -15,6 +15,7 @@ const miniProjectsData: Project[] = [
         description: 'I crafted a collection of games, including Minesweeper, Stacker, and Ducker, each offering unique challenges and catering to diverse interests, aiming to provide an entertaining platform for players of all skill levels.',
         tags: ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT'],
         imageUrl: `${process.env.PUBLIC_URL}/images/mini-projects/games_2.jpg`,
+        alt: 'Game web app',
         liveUrl: 'https://igordinuzzi.github.io/games/',
         repoUrl: 'https://github.com/igordinuzzi/games',
       },
@@ -25,6 +26,7 @@ const miniProjectsData: Project[] = [
         description: 'Word Whiz is a web-based game that combines learning and fun, allowing players to improve their English spelling skills across various difficulty levels while racing against time.',
         tags: ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT'],
         imageUrl: `${process.env.PUBLIC_URL}/images/mini-projects/word.jpg`,
+        alt: 'Spelling game web app',
         liveUrl: 'https://igordinuzzi.github.io/Word-Whiz/',
         repoUrl: 'https://github.com/igordinuzzi/Word-Whiz',
       },
@@ -35,6 +37,7 @@ const miniProjectsData: Project[] = [
         description: 'Basic Scientific Calculator, a user-friendly online calculator for performing arithmetic operations, square roots, exponentiation, and memory functions. It is ideal for quick calculations and educational purposes.',
         tags: ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT'],
         imageUrl: `${process.env.PUBLIC_URL}/images/mini-projects/calculator.jpg`,
+        alt: 'calculator web app',
         liveUrl: 'https://igordinuzzi.github.io/calculator/',
         repoUrl: 'https://github.com/igordinuzzi/calculator',
       },
@@ -45,6 +48,7 @@ const miniProjectsData: Project[] = [
         description: 'Today Weather Wonderland is a web application that displays real-time weather information for any city. It offers features like toggling between dark and light themes, and switching temperature units between Celsius and Fahrenheit.',
         tags: ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT', 'API'],
         imageUrl: `${process.env.PUBLIC_URL}/images/mini-projects/weather.jpg`,
+        alt: 'Weather web app',
         liveUrl: 'https://igordinuzzi.github.io/weatherapp/',
         repoUrl: 'https://github.com/igordinuzzi/weatherapp',
       },      
@@ -107,6 +111,7 @@ const letterVariants = {
                 <Button 
                   className="secondary-btn" 
                   href={project.liveUrl} 
+                  aria-label={`View ${project.title} live site`}
                   target="_blank" 
                   onClick={(e) => {
                     e.preventDefault(); // Prevent link navigation
@@ -117,7 +122,8 @@ const letterVariants = {
                 </Button>
                 <Button 
                  className="primary-btn" 
-                 href={project.repoUrl} 
+                 href={project.repoUrl}
+                 aria-label={`View ${project.title} repository`} 
                  target="_blank" 
                  onClick={(e) => {
                  e.preventDefault(); // Prevent link navigation

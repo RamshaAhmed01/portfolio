@@ -28,13 +28,13 @@ const Footer: React.FC = () => {
           </Col>
           <Col xs={12} md={4}>
             {/* Social Icons */}
-            <a href="mailto:replytoigor@gmail.com" className="text-decoration-none mx-2">
+            <a href="mailto:replytoigor@gmail.com" className="text-decoration-none mx-2" aria-label="send me an email">
               <FontAwesomeIcon icon={faEnvelope} size="lg" className="icons-footer"/>
             </a>
-            <a href="https://www.linkedin.com/in/igor-dinuzzi-von-ach-100286ab/" target="_blank" className="text-decoration-none mx-2" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/igor-dinuzzi-von-ach-100286ab/" target="_blank" className="text-decoration-none mx-2" rel="noreferrer" aria-label="go to Linkedin">
               <FontAwesomeIcon icon={faLinkedinIn} size="lg" className="icons-footer"/>
             </a>
-            <a href="https://github.com/igordinuzzi" target="_blank" className="text-decoration-none mx-2" rel="noreferrer">
+            <a href="https://github.com/igordinuzzi" target="_blank" className="text-decoration-none mx-2" rel="noreferrer" aria-label="go to Github">
               <FontAwesomeIcon icon={faGithub} size="lg" className="icons-footer"/>
             </a>
           </Col>

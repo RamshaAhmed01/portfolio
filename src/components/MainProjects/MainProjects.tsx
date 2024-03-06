@@ -15,6 +15,7 @@ const projectsData: Project[] = [
       description: 'This React-based platform stands out as a unique second-hand Dutch bike ecommerce site, combining easy product discovery, detailed insights, and smooth shopping in an appealing and functional online environment. ',
       tags: ['REACT', 'JAVASCRIPT', 'BOOTSTRAP'],
       imageUrl: `${process.env.PUBLIC_URL}/images/main-projects/fietsen.jpg`,
+      alt: 'Second-hand Dutch bikes ecommerce', 
       liveUrl: 'https://igordinuzzi.github.io/ecommerce-site-react/',
       repoUrl: 'https://github.com/igordinuzzi/ecommerce-site-react',
     },
@@ -25,6 +26,7 @@ const projectsData: Project[] = [
       description: 'A sophisticated React-based application crafted to empower users with efficient budget management capabilities. This system streamlines the process of tracking incomes and expenses, providing insights into financial trends, and fostering a proactive approach to personal finance management.',
       tags: ['REACT', 'JAVASCRIPT', 'BOOTSTRAP'],
       imageUrl: `${process.env.PUBLIC_URL}/images/main-projects/budget.jpg`,
+      alt: 'Budget tracker dashboard', 
       liveUrl: 'https://igordinuzzi.github.io/budget-management-system-react/',
       repoUrl: 'https://github.com/igordinuzzi/budget-management-system-react',
     },
@@ -35,6 +37,7 @@ const projectsData: Project[] = [
       description: 'In this project, I utilized the power of React, a popular JavaScript library for building user interfaces, to create a stunning and dynamic portfolio website. Designed with both aesthetics and functionality in mind, this portfolio showcases my skills, projects, and achievements in an engaging and accessible manner.',
       tags: ['REACT', 'TYPESCRIPT', 'BOOTSTRAP'],
       imageUrl: `${process.env.PUBLIC_URL}/images/main-projects/igor.jpg`,
+      alt: 'Igor dev portfolio', 
       liveUrl: 'https://igordinuzzi.github.io/portfolio-react/',
       repoUrl: 'https://github.com/igordinuzzi/portfolio-react',
     },
@@ -45,6 +48,7 @@ const projectsData: Project[] = [
       description: 'The application offers a dynamic experience to explore various RSS news feeds, with features like a dark/light mode switch, language filters, weather updates, and social media sharing',
       tags: ['HTML', 'CSS', 'RSS', 'API', 'BOOTSTRAP'],
       imageUrl: `${process.env.PUBLIC_URL}/images/main-projects/newsfeed.jpg`,
+      alt: 'Newsfeed web app', 
       liveUrl: 'https://igordinuzzi.github.io/newsfeed/',
       repoUrl: 'https://github.com/igordinuzzi/newsfeed',
     },
@@ -55,6 +59,7 @@ const projectsData: Project[] = [
       description: 'The GreenSync landing page offers an engaging showcase of the innovative and eco-friendly smartwatch, seamlessly blending aesthetics and functionality for an immersive user experience.',
       tags: ['HTML', 'CSS', 'JAVASCRIPT', 'CHATBOT'],
       imageUrl: `${process.env.PUBLIC_URL}/images/main-projects/green.jpg`,
+      alt: 'Greensynch product landing page', 
       liveUrl: 'https://igordinuzzi.github.io/greensynch/',
       repoUrl: 'https://github.com/igordinuzzi/greensynch',
     },
@@ -65,6 +70,7 @@ const projectsData: Project[] = [
       description: 'Oishi Izakaya transcends being merely a restaurant; it is an immersive journey into Japanese cuisine and culture, blending tradition with innovation to deliver a flavorful fusion reminiscent of Japans lively streets.',
       tags: ['HTML', 'CSS', 'JAVASCRIPT', 'JSON'],
       imageUrl: `${process.env.PUBLIC_URL}/images/main-projects/oishi.jpg`,
+      alt: 'Oishi izakaya restaurant website', 
       liveUrl: 'https://igordinuzzi.github.io/oishizakaya/',
       repoUrl: 'https://github.com/igordinuzzi/oishizakaya',
     },
@@ -75,6 +81,7 @@ const projectsData: Project[] = [
       description: 'Yamanote Melodies, a React-based web app, immerses users in an auditory journey along Tokyo Yamanote Line, offering station-specific melodies and announcements.',
       tags: ['REACT', 'JAVASCRIPT', 'BOOTSTRAP'],
       imageUrl: `${process.env.PUBLIC_URL}/images/main-projects/yamanotes.jpg`,
+      alt: 'Yamanotes web app', 
       liveUrl: 'https://igordinuzzi.github.io/yamanote-react/',
       repoUrl: 'https://github.com/igordinuzzi/yamanote-react',
     },
@@ -85,6 +92,7 @@ const projectsData: Project[] = [
       description: 'With a seamless UI and dynamic components powered by React, the gallery beckons visitors to explore a diverse global art collection effortlessly, fostering delightful discoveries of new pieces and artists.',
       tags: ['REACT', 'TYPESCRIPT', 'BOOTSTRAP', 'CMS'],
       imageUrl: `${process.env.PUBLIC_URL}/images/main-projects/casa.jpg`,
+      alt: 'Art gallery webpage', 
       liveUrl: 'https://igordinuzzi.github.io/casa-sostoa-react/',
       repoUrl: 'https://github.com/igordinuzzi/casa-sostoa-react',
     },
@@ -170,7 +178,8 @@ const projectsData: Project[] = [
                     <Card.Text>{project.description}</Card.Text>
                     <Button 
                   className="secondary-btn" 
-                  href={project.liveUrl} 
+                  href={project.liveUrl}
+                  aria-label={`View ${project.title} live site`} 
                   target="_blank" 
                   onClick={(e) => {
                     e.preventDefault(); // Prevent link navigation
@@ -182,6 +191,7 @@ const projectsData: Project[] = [
                 <Button 
                  className="primary-btn" 
                  href={project.repoUrl} 
+                 aria-label={`View ${project.title} repository`}
                  target="_blank" 
                  onClick={(e) => {
                  e.preventDefault(); // Prevent link navigation

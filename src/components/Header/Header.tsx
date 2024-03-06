@@ -15,21 +15,21 @@ const Header: React.FC = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">About</Link>
-            <Link to="main-projects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Main Projects</Link>
-            <Link to="mini-projects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Mini Projects</Link>
-            <Link to="stack" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Stack</Link>
-            <Link to="timeline" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Timeline</Link>
-            <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className="nav-link">Contact</Link>
+            <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="About">About</Link>
+            <Link to="main-projects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="main projects">Main Projects</Link>
+            <Link to="mini-projects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="mini-projects">Mini Projects</Link>
+            <Link to="stack" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="stack">Stack</Link>
+            <Link to="timeline" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="timeline">Timeline</Link>
+            <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="contact">Contact</Link>
           </Nav>
           <Nav>
-            <Nav.Link href="mailto:replytoigor@gmail.com">
+            <Nav.Link href="mailto:replytoigor@gmail.com" aria-label="send an email">
               <FontAwesomeIcon icon={faEnvelope} className="icons"/>
             </Nav.Link>
-            <Nav.Link href="https://www.linkedin.com/in/igor-dinuzzi-von-ach-100286ab/" target="_blank">
+            <Nav.Link href="https://www.linkedin.com/in/igor-dinuzzi-von-ach-100286ab/" target="_blank" aria-label="go to Linkedin">
               <FontAwesomeIcon icon={faLinkedinIn} className="icons"/>
             </Nav.Link>
-            <Nav.Link href="https://github.com/igordinuzzi" target="_blank">
+            <Nav.Link href="https://github.com/igordinuzzi" target="_blank" aria-label="go to github">
               <FontAwesomeIcon icon={faGithub} className="icons"/>
             </Nav.Link>
           </Nav>
