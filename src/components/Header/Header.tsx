@@ -18,6 +18,7 @@ const Header: React.FC = () => {
             <Link to="about" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="About">About</Link>
             <Link to="main-projects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="main projects">Main Projects</Link>
             <Link to="mini-projects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="mini-projects">Mini Projects</Link>
+            <Link to="design-projects" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="design-projects">Designs</Link>
             <Link to="stack" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="stack">Stack</Link>
             <Link to="timeline" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="timeline">Timeline</Link>
             <Link to="contact" spy={true} smooth={true} offset={-70} duration={500} className="nav-link" aria-label="contact">Contact</Link>

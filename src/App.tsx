@@ -16,6 +16,7 @@ import Contact from './components/Contact/Contact';
 import ScrollDownArrow from './components/ScrollDownArrow/ScrollDownArrow';
 import ScrollDown from './components/ScrollDownArrow/ScrollDown';
 import Bye from './components/Bye/Bye'
+import DesignProjects from './components/DesignProjects/DesignProjects';
 
 const App: React.FC = () => {
   const sectionVariants = {
@@ -44,6 +45,10 @@ const App: React.FC = () => {
       <ScrollDown />
       <motion.div id="mini-projects" variants={sectionVariants} initial="hidden" animate="visible">
         <MiniProjects />
+      </motion.div>
+      <ScrollDown />
+      <motion.div id="design-projects" variants={sectionVariants} initial="hidden" animate="visible">
+        <DesignProjects />
       </motion.div>
       <ScrollDown />
       <motion.div id="stack" variants={sectionVariants} initial="hidden" animate="visible">
