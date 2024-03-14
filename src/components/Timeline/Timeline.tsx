@@ -25,10 +25,6 @@ const itemVariants = {
   visible: { x: 0, opacity: 1 },
 };
 
-  // Splitting the heading into letters for animation
-  const heading = "Timeline";
-  const headingLetters = Array.from(heading);
-
   const containerVariants = {
     visible: {
       transition: {
@@ -45,18 +41,6 @@ const itemVariants = {
 const Timeline: React.FC = () => {
   return (
     <Container className="section">
-        <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={containerVariants}
-        className="h1"
-        >
-        {headingLetters.map((letter, index) => (
-          <motion.span key={index} variants={letterVariants}>
-            {letter}
-          </motion.span>
-        ))}
-      </motion.div>
       <h2>Time Travel: The Fun Highlights of My Adventure</h2>
       <Row className="timeline-row">
         <Col xs={12} className="timeline-line-container">

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import { Container, Row, Col, Button, Card } from 'react-bootstrap';
 import { Project } from '../../models/Design';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTrash } from '@fortawesome/pro-light-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faTrash, faArrowRight } from '@fortawesome/pro-light-svg-icons';
 import { motion } from 'framer-motion';
 import confetti from 'canvas-confetti';
 
@@ -167,7 +166,7 @@ const projectsData: Project[] = [
                  triggerConfetti();
                  window.open(project.repoUrl, '_blank'); // Manually open the link in a new tab
                  }}>
-                <FontAwesomeIcon icon={faGithub} className="icon-in-btn" /> Repo
+                <FontAwesomeIcon icon={faArrowRight} className="icon-in-btn" /> See more
                 </Button>
                   </Card.Body>
                 </Card>

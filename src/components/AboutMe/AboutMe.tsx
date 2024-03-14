@@ -55,11 +55,6 @@ const AboutMe: React.FC = () => {
           {/* Button Container */}
           <Row className="my-4">
             <Col xs={12} sm={6} md={3}>
-              <Button className="mb-3 secondary-btn" href="https://drive.filen.io/d/05330ee8-5dcc-4f2c-8d40-9bdeef08f9d8#3jy5KW4BWOgfwPSpugaKF1cEN0Bbx67Y" target="_blank" aria-label="download the cv">
-                <FontAwesomeIcon icon={faFileArrowDown} className="me-2" /> Download CV
-              </Button>
-            </Col>
-            <Col xs={12} sm={6} md={3}>
               <Button className="mb-3 secondary-btn" href="mailto:replytoigor@gmail.com" aria-label="send me an email">
                 <FontAwesomeIcon icon={faEnvelope} className="me-2" /> Email
               </Button>

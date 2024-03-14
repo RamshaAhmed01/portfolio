@@ -35,27 +35,24 @@ const App: React.FC = () => {
       <Header />
       <Hero />
       <ScrollDownArrow targetRef={mainProjectsRef} />
-      <motion.div ref={mainProjectsRef} id="about" variants={sectionVariants} initial="hidden" animate="visible">
-        <AboutMe />
-      </motion.div>
-      <ScrollDown />
-      <motion.div  id="main-projects" variants={sectionVariants} initial="hidden" animate="visible">
+      <motion.div  ref={mainProjectsRef} id="main-projects" variants={sectionVariants} initial="hidden" animate="visible">
         <MainProjects />
-      </motion.div>
-      <ScrollDown />
-      <motion.div id="mini-projects" variants={sectionVariants} initial="hidden" animate="visible">
-        <MiniProjects />
       </motion.div>
       <ScrollDown />
       <motion.div id="design-projects" variants={sectionVariants} initial="hidden" animate="visible">
         <DesignProjects />
       </motion.div>
       <ScrollDown />
+      <motion.div id="mini-projects" variants={sectionVariants} initial="hidden" animate="visible">
+        <MiniProjects />
+      </motion.div>
+      <ScrollDown />
       <motion.div id="stack" variants={sectionVariants} initial="hidden" animate="visible">
         <Stack />
       </motion.div>
       <ScrollDown />
-      <motion.div id="timeline" variants={sectionVariants} initial="hidden" animate="visible">
+      <motion.div id="about" variants={sectionVariants} initial="hidden" animate="visible">
+        <AboutMe />
         <Timeline />
       </motion.div>
       <ScrollDown />

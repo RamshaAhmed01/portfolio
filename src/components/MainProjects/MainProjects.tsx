@@ -115,7 +115,7 @@ const projectsData: Project[] = [
     };
     
   // Splitting the heading into letters for animation
-  const heading = "Main Projects";
+  const heading = "Dev Projects";
   const headingLetters = Array.from(heading);
 
   const containerVariants = {
