@@ -18,7 +18,7 @@ const projectsData: Project[] = [
     },
     {
       id: 2,
-      title: 'Designlab',
+      title: 'Designlab Motion',
       subtitle: 'Instructional Videos',
       tags: ['MOTION GRAPHICS'],
       imageUrl: `${process.env.PUBLIC_URL}/images/design/designlab.jpg`,
@@ -45,6 +45,42 @@ const projectsData: Project[] = [
     },
     {
       id: 5,
+      title: 'Designlab Design System',
+      subtitle: 'Re-branding & Design System',
+      tags: ['BRANDING', 'DESIGN SYSTEM'],
+      imageUrl: `${process.env.PUBLIC_URL}/images/design/dl.jpg`,
+      alt: 'Designlab design system', 
+      repoUrl: 'https://github.com/igordinuzzi/design-dl-rebranding/blob/main/README.md',
+    },
+    {
+      id: 6,
+      title: 'RTVE',
+      subtitle: 'Instructional Videos',
+      tags: ['MOTION GRAPHICS'],
+      imageUrl: `${process.env.PUBLIC_URL}/images/design/rtve.jpg`,
+      alt: 'Designlab Instructional videos', 
+      repoUrl: 'https://github.com/igordinuzzi/design-rtve/blob/main/README.md',
+    },
+    {
+      id: 7,
+      title: 'NHS Covid App',
+      subtitle:'App Design',
+      tags: ['UX', 'UI', 'ILLUSTRATIONS'],
+      imageUrl: `${process.env.PUBLIC_URL}/images/design/nhs.jpg`,
+      alt: 'Nhs covid app', 
+      repoUrl: 'https://github.com/igordinuzzi/design-nhs/blob/main/README.md',
+    },
+    {
+      id: 8,
+      title: 'Today News',
+      subtitle: 'App Design',
+      tags: ['UX', 'UI'],
+      imageUrl: `${process.env.PUBLIC_URL}/images/design/today.jpg`,
+      alt: 'Today news app', 
+      repoUrl: 'https://github.com/igordinuzzi/design-today/blob/main/README.md',
+    },
+    {
+      id: 9,
       title: "L'Oréal",
       subtitle: 'Blog Website',
       tags: ['UX', 'UI', 'BRANDING'],
@@ -53,7 +89,7 @@ const projectsData: Project[] = [
       repoUrl: 'https://github.com/igordinuzzi/design-loreal/blob/main/README.md',
     },
     {
-      id: 6,
+      id: 10,
       title: 'Ohypnosis',
       subtitle: 'App',
       tags: ['UX', 'UI', 'BRANDING'],
@@ -62,7 +98,7 @@ const projectsData: Project[] = [
       repoUrl: 'https://github.com/igordinuzzi/design-ohypnosis/blob/main/README.md',
     },
     {
-      id: 7,
+      id: 11,
       title: 'Omnipillow',
       subtitle: 'E-commerce',
       tags: ['UX', 'UI'],
@@ -71,7 +107,7 @@ const projectsData: Project[] = [
       repoUrl: 'https://github.com/igordinuzzi/design-omnipillow/blob/main/README.md',
     },
     {
-      id: 8,
+      id: 12,
       title: 'Savvi Financial',
       subtitle:'Branding',
       tags: ['BRANDING'],
@@ -84,7 +120,7 @@ const projectsData: Project[] = [
 
   const DesignProjects: React.FC = () => {
     const [filter, setFilter] = useState<string | null>(null);
-    const tags = ["UX", "UI", "BRANDING", "SOCIAL", "BROCHURE DESIGN", "MOTION GRAPHICS", "ILLUSTRATIONS"];
+    const tags = ["UX", "UI", "BRANDING", "SOCIAL", "BROCHURE DESIGN", "MOTION GRAPHICS", "ILLUSTRATIONS", "DESIGN SYSTEM"];
 
     const filteredProjects = filter ? projectsData.filter(project => project.tags.includes(filter)) : projectsData;
 
@@ -143,8 +179,8 @@ const projectsData: Project[] = [
         <Row className="gy-4">
           {filteredProjects.map((project, index) => {
             // Determine the number of cards per row based on the index
-            let colSize = 6; // Default for the first 4 cards (2 per row for the first two rows)
-            if (index >= 4) {
+            let colSize = 6; // Default for the first 6 cards (2 per row for the first two rows)
+            if (index >= 8) {
               colSize = 3; // Changes to 4 cards per row for indexes 4 and above
             }
   

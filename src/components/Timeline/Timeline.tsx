@@ -25,18 +25,6 @@ const itemVariants = {
   visible: { x: 0, opacity: 1 },
 };
 
-  const containerVariants = {
-    visible: {
-      transition: {
-        staggerChildren: 0.5,
-      },
-    },
-  };
-
-  const letterVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
 
 const Timeline: React.FC = () => {
   return (

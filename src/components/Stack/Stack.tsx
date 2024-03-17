@@ -3,10 +3,16 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faBootstrap, faHtml5, faCss3Alt, faJs, faGithub, faGit } from '@fortawesome/free-brands-svg-icons';
 import { faFileAlt, faServer } from '@fortawesome/free-solid-svg-icons';
-import { faRss, faChartNetwork, faSidebarFlip, faCode, faFrame, faMobile, faUser, faRulerHorizontal } from '@fortawesome/pro-light-svg-icons';
+import { faRss, faChartNetwork, faSidebarFlip, faCode, faFrame, faMobile, faUser, faRulerHorizontal, faVideo, faPerson, faThoughtBubble } from '@fortawesome/pro-light-svg-icons';
 import { motion } from 'framer-motion';
 
 const stackItems = [
+  { name: 'UX', category: 'DESIGN', icon: faUser },
+  { name: 'UI', category: 'DESIGN', icon: faMobile },
+  { name: 'GRAPHIC & VISUAL', category: 'DESIGN', icon: faRulerHorizontal },
+  { name: 'MOTION GRAPHICS', category: 'DESIGN', icon: faVideo },
+  { name: 'DESIGN LEADERSHIP', category: 'DESIGN', icon: faPerson },
+  { name: 'COMMUNICATION DESIGN', category: 'DESIGN', icon: faThoughtBubble },
   { name: 'REACT', category: 'LIBRARIES', icon: faReact },
   { name: 'MATERIAL UI', category: 'FRAMEWORK', icon: faSidebarFlip },
   { name: 'BOOTSTRAP', category: 'FRAMEWORK', icon: faBootstrap },
@@ -22,9 +28,6 @@ const stackItems = [
   { name: 'RSS', category: 'GENERIC SKILLS', icon: faRss },
   { name: 'GIT', category: 'GENERIC SKILLS', icon: faGit },
   { name: 'GITHUB', category: 'GENERIC SKILLS', icon: faGithub },
-  { name: 'UX', category: 'DESIGN', icon: faUser },
-  { name: 'UI', category: 'DESIGN', icon: faMobile },
-  { name: 'GRAPHIC & VISUAL', category: 'DESIGN', icon: faRulerHorizontal },
 ];
 
  // Splitting the heading into letters for animation
